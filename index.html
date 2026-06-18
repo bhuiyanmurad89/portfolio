@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muradujjaman Bhuiyan | IT Infrastructure & Network Specialist Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #319795;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .header-container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95rem;
+            border-bottom: 1px dashed transparent;
+            transition: border-color 0.3s;
+        }
+
+        .contact-links a:hover {
+            border-color: var(--white);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Summary styling */
+        .summary-text {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+        }
+
+        /* Experience & Education styling */
+        .job, .edu-item, .vol-item {
+            margin-bottom: 25px;
+        }
+
+        .job:last-child, .edu-item:last-child, .vol-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header, .edu-header, .vol-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .job-title, .edu-title, .vol-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .company, .institution, .org {
+            font-style: italic;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: var(--text-dark);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1xl));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .skill-category li {
+            background: var(--white);
+            padding: 6px 12px;
+            margin-bottom: 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        /* Credentials grid */
+        .credentials-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .credential-badge {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .job-header, .edu-header, .vol-header {
+                flex-direction: column;
+            }
+            .date {
+                margin-top: 5px;
+            }
+            .contact-links a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Muradujjaman Bhuiyan</h1>
+            <p>IT Infrastructure & Network Specialist</p>
+            <div class="contact-links">
+                <a href="tel:+97433067326">📞 +974-330-67326</a>
+                <a href="mailto:bhuiyanmurad89@gmail.com">✉️ bhuiyanmurad89@gmail.com</a>
+                <a href="https://www.linkedin.com/in/muradbhuiyan/" target="_blank">🔗 LinkedIn Portfolio</a>
+                <span style="margin-left: 15px;">📍 Doha, Qatar</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Results-driven IT Professional with over 10 years of extensive experience specializing in network administration, infrastructure, and systems support. Proven track record within the block and precast manufacturing industry, successfully managing complex network security systems and deploying automated data backup solutions. Demonstrated expertise in configuring firewalls, integrating surveillance systems, and full-stack web development (PHP/MySQL). Adept at optimizing system performance, reducing operational downtime, and delivering robust technical support aligned with organizational goals.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical & Professional Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Network & Infrastructure Security</h3>
+                    <ul>
+                        <li>Network Administration & Support</li>
+                        <li>Firewall Configuration & Management (Fortinet)</li>
+                        <li>Surveillance System Integration (Dahua XVR/NVR)</li>
+                        <li>IT Infrastructure Development</li>
+                        <li>Windows Server Administration</li>
+                        <li>Active Directory & User Access Control</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems & Data Automation</h3>
+                    <ul>
+                        <li>Automating Tasks via Windows Batch Scripting</li>
+                        <li>Data Redundancy & Disaster Recovery</li>
+                        <li>Cloud Storage Integration (Microsoft OneDrive)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development & Databases</h3>
+                    <ul>
+                        <li>Backend Web Development (PHP)</li>
+                        <li>Database Management Systems (MySQL)</li>
+                        <li>Full-stack Web Maintenance</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Soft Skills</h3>
+                    <ul>
+                        <li>Advanced Microsoft Excel (XLOOKUP, DATEDIF)</li>
+                        <li>Technical Documentation & Reporting</li>
+                        <li>Problem-solving & Troubleshooting</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Project Coordination & Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="credentials">
+            <h2>Professional Credentials</h2>
+            <div class="credentials-list">
+                <div class="credential-badge">Cisco Certified Network Associate (CCNA)</div>
+                <div class="credential-badge">Fortinet Network Security Expert (NSE)</div>
+                <div class="credential-badge">Certified Cybersecurity Educator Professional (CCEP)</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">IT Officer</div>
+                        <div class="company">FBA R-Mix, Block & Precast Industry — Doha, Qatar</div>
+                    </div>
+                    <div class="date">November 2018 - Present</div>
+                </div>
+                <ul>
+                    <li>Manage and optimize core network infrastructure and system support across the organization, ensuring 99.9% system uptime and seamless operations.</li>
+                    <li>Design, configure, and fortify network security protocols by integrating Dahua XVR surveillance systems through Fortinet firewalls.</li>
+                    <li>Successfully conceptualized and implemented an automated data redundancy project using Windows batch scripts to sync local directories with OneDrive, securing critical company data.</li>
+                    <li>Develop and maintain custom web-based internal management systems, leveraging PHP and MySQL to streamline category tracking and product management logic.</li>
+                    <li>Utilize advanced Excel models (including XLOOKUP and DATEDIF formulas) to perform complex data analysis, tracking infrastructure metrics and reporting operational efficiency to senior management.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">IT Support Technician</div>
+                        <div class="company">Telnet Communication Ltd. — Dhaka, Bangladesh</div>
+                    </div>
+                    <div class="date">March 2015 - October 2018</div>
+                </div>
+                <ul>
+                    <li>Monitored and maintained ISP-level network health, managing multi-tier routers and Layer-2/Layer-3 switches.</li>
+                    <li>Provided Tier-2 and Tier-3 technical support for end-user connectivity, utilizing remote administration and diagnostic tools.</li>
+                    <li>Deployed and configured Customer-Premises Equipment (CPE) and oversaw structured cabling for new network deployments.</li>
+                    <li>Conducted network performance analysis and implemented optimizations to maximize customer satisfaction and stability.</li>
+                    <li>Collaborated with the core network team to troubleshoot hardware failures and minimize service interruptions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="edu-title">Bachelor of Science in Computer Science</div>
+                        <div class="institution">Bangladesh University of Business and Technology (BUBT) — Dhaka</div>
+                    </div>
+                    <div class="date">June 2010 - February 2014</div>
+                </div>
+                <p><strong>Core Focus:</strong> Advanced Computer Networking, Routing & Switching architectures, Network Security, Data Encryption, Cryptography, Database Management Systems (DBMS via MySQL), Web Application Development (PHP/MVC), Operating Systems (Windows Server & Linux/Unix administration), Systems Analysis, and Infrastructure Algorithms.</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="edu-title">High School / Secondary Diploma in Computer Technology</div>
+                        <div class="institution">Institute of Computer Science & Technology (ICST) — Feni</div>
+                    </div>
+                    <div class="date">June 2006 - February 2010</div>
+                </div>
+                <p><strong>Core Focus:</strong> Fundamentals of Computer Architecture, Hardware Engineering, Local Area Network (LAN) setup, structured cabling, Wi-Fi configuration, basic database systems, web development fundamentals (HTML/CSS), IT troubleshooting, and automated office systems.</p>
+            </div>
+        </section>
+
+        <section id="volunteer">
+            <h2>Volunteer & Community Engagement</h2>
+            
+            <div class="vol-item">
+                <div class="vol-header">
+                    <div>
+                        <div class="vol-title">Technical Contributor (Data & Infrastructure)</div>
+                        <div class="org">Bangladesh 2.0 Initiative — Dhaka</div>
+                    </div>
+                    <div class="date">August 2024 - October 2025</div>
+                </div>
+                <ul>
+                    <li>Contributed strategic recommendations and technical feedback regarding data centralization frameworks and road management system optimization.</li>
+                    <li>Collaborated on open community platforms to suggest IT-driven infrastructure improvements for public governance projects.</li>
+                </ul>
+            </div>
+
+            <div class="vol-item">
+                <div class="vol-header">
+                    <div>
+                        <div class="vol-title">Founding Member & Administrative Coordinator</div>
+                        <div class="org">Local Mutual Aid & Co-operative Society — Feni</div>
+                    </div>
+                    <div class="date">April 2014 - December 2020</div>
+                </div>
+                <ul>
+                    <li>Coordinated administrative and operational logistics for a 9-member co-operative society, fostering collective decision-making and community support.</li>
+                    <li>Drafted formal meeting agendas, recorded comprehensive minutes of proceedings, and documented policy framework decisions.</li>
+                    <li>Managed internal communication channels and coordinated financial records to ensure complete transparency among members.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Muradujjaman Bhuiyan. Built with standard-compliant HTML5 & CSS3.</p>
+    </footer>
+
+</body>
+</html>
